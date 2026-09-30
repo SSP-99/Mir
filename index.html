@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1018">
+  <title>CivicLens BRICS</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.1/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <header class="border-b border-[var(--line)] bg-[var(--panel)]/95 backdrop-blur sticky top-0 z-40">
+      <div class="max-w-[1600px] mx-auto w-full px-4 sm:px-6">
+        <div class="min-h-[68px] flex items-center gap-4">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="w-9 h-9 rounded-lg border border-[var(--gold)]/40 bg-[var(--gold)]/10 flex items-center justify-center shrink-0">
+              <i data-lucide="scan-line" class="w-5 h-5 text-[var(--gold)]"></i>
+            </div>
+            <div class="min-w-0">
+              <div class="font-semibold tracking-wide text-[var(--text)] truncate">CivicLens BRICS</div>
+              <div class="text-[11px] text-[var(--muted)] uppercase tracking-[0.16em] truncate">Digital Public Good</div>
+            </div>
+          </div>
+
+          <div class="flex-1 min-w-0 overflow-x-auto">
+            <nav id="nav" class="flex items-center justify-center gap-1 min-w-max"></nav>
+          </div>
+
+          <div id="actions" class="flex items-center gap-2 shrink-0"></div>
+        </div>
+      </div>
+    </header>
+
+    <main id="view" class="flex-1 max-w-[1600px] mx-auto w-full px-4 sm:px-6 py-5"></main>
+
+    <div id="overlay-root"></div>
+    <div id="toast-root"></div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/engines.js"></script>
+  <script src="js/views/command.js"></script>
+  <script src="js/views/portal.js"></script>
+  <script src="js/views/ledger.js"></script>
+  <script src="js/views/blueprints.js"></script>
+  <script src="js/views/report.js"></script>
+  <script src="js/views/map.js"></script>
+  <script src="js/views/labs.js"></script>
+  <script src="js/views/labs2.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
